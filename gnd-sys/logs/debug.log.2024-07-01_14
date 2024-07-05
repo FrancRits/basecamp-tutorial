@@ -1,0 +1,971 @@
+[2024-07-01 12:45:41,128] INFO [basecamp.py __main__ execute (954)]: Basecamp version 1.16 initialized with mission 'basecamp', target 'cpu1' on 07/01/2024 at 12:45:41
+[2024-07-01 12:45:41,128] INFO [basecamp.py __main__ execute (955)]: Basecamp target host 127.0.0.1, command port 1234, telemetry port 1235
+[2024-07-01 12:45:41,128] INFO [cmdtlmrouter.py router set_cfs_ip_addr (190)]: cFS IP address set to ('127.0.0.1', 1234)
+[2024-07-01 12:45:41,128] INFO [cmdtlmrouter.py router __init__ (132)]: CmdTlmRouter Init: cfs_cmd_socket('127.0.0.1', 1234), gnd_tlm_socket('127.0.0.1', 1235)
+[2024-07-01 12:45:41,129] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg HK_TLM, Id: 64
+[2024-07-01 12:45:41,129] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg APP_TLM, Id: 65
+[2024-07-01 12:45:41,129] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg MEMSTATS_TLM, Id: 67
+[2024-07-01 12:45:41,129] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg HK_TLM, Id: 68
+[2024-07-01 12:45:41,129] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg SHORT_EVENT_MSG, Id: 69
+[2024-07-01 12:45:41,129] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg LONG_EVENT_MSG, Id: 70
+[2024-07-01 12:45:41,129] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg HK_TLM, Id: 71
+[2024-07-01 12:45:41,129] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg STATS_TLM, Id: 72
+[2024-07-01 12:45:41,129] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg ALLSUBS_TLM, Id: 73
+[2024-07-01 12:45:41,129] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg ONESUB_TLM, Id: 74
+[2024-07-01 12:45:41,129] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TBL, Msg HK_TLM, Id: 75
+[2024-07-01 12:45:41,129] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TBL, Msg REG_TLM, Id: 76
+[2024-07-01 12:45:41,129] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TIME, Msg HK_TLM, Id: 77
+[2024-07-01 12:45:41,129] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TIME, Msg DIAG_TLM, Id: 78
+[2024-07-01 12:45:41,129] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CI_LAB, Msg HK_TLM, Id: 79
+[2024-07-01 12:45:41,130] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg HK_TLM, Id: 80
+[2024-07-01 12:45:41,130] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg FILE_INFO_TLM, Id: 81
+[2024-07-01 12:45:41,130] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg DIR_LIST_TLM, Id: 82
+[2024-07-01 12:45:41,130] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg OPEN_FILE_TLM, Id: 83
+[2024-07-01 12:45:41,130] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg FILE_SYS_TBL_TLM, Id: 84
+[2024-07-01 12:45:41,130] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg HK_TLM, Id: 85
+[2024-07-01 12:45:41,130] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg START_FOTP_TLM, Id: 86
+[2024-07-01 12:45:41,130] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg FOTP_DATA_SEGMENT_TLM, Id: 87
+[2024-07-01 12:45:41,130] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg FINISH_FOTP_TLM, Id: 88
+[2024-07-01 12:45:41,130] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg HK_TLM, Id: 89
+[2024-07-01 12:45:41,130] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg DIAG_TLM, Id: 90
+[2024-07-01 12:45:41,130] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg TBL_ENTRY_TLM, Id: 91
+[2024-07-01 12:45:41,130] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg HK_TLM, Id: 92
+[2024-07-01 12:45:41,130] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg DATA_TYPES_TLM, Id: 93
+[2024-07-01 12:45:41,130] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PKT_TBL_TLM, Id: 94
+[2024-07-01 12:45:41,130] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PLBK_EVENT_TLM, Id: 95
+[2024-07-01 12:45:41,130] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg SUB_WRAPPED_TLM, Id: 97
+[2024-07-01 12:45:41,130] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PUB_WRAPPED_TLM, Id: 98
+[2024-07-01 12:45:41,130] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: APP_C_DEMO, Msg STATUS_TLM, Id: 99
+[2024-07-01 12:45:41,130] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: APP_C_DEMO, Msg BIN_PLAYBK_TLM, Id: 100
+[2024-07-01 12:45:41,130] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: HI_WORLD, Msg STATUS_TLM, Id: 115
+[2024-07-01 12:45:41,130] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: HK_TLM
+[2024-07-01 12:45:41,130] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: APP_TLM
+[2024-07-01 12:45:41,130] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: MEMSTATS_TLM
+[2024-07-01 12:45:41,130] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: HK_TLM
+[2024-07-01 12:45:41,130] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: SHORT_EVENT_MSG
+[2024-07-01 12:45:41,130] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: LONG_EVENT_MSG
+[2024-07-01 12:45:41,130] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: HK_TLM
+[2024-07-01 12:45:41,130] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: STATS_TLM
+[2024-07-01 12:45:41,130] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: ALLSUBS_TLM
+[2024-07-01 12:45:41,130] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: ONESUB_TLM
+[2024-07-01 12:45:41,130] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TBL: HK_TLM
+[2024-07-01 12:45:41,130] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TBL: REG_TLM
+[2024-07-01 12:45:41,130] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TIME: HK_TLM
+[2024-07-01 12:45:41,130] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TIME: DIAG_TLM
+[2024-07-01 12:45:41,130] INFO [telemetry.py cfsinterface.telemetry _recv_tlm_handler (454)]: TelemetryQueueServer started receive telemetry handler thread
+[2024-07-01 12:45:41,130] INFO [basecamp.py __main__ execute (990)]: Successfully created application objects
+[2024-07-01 12:45:41,131] INFO [cmdtlmrouter.py router tlm_dest_connect_thread (274)]: Starting tlm_dest_connect_thread
+[2024-07-01 12:46:29,331] INFO [basecamp.py __main__ shutdown (685)]: Starting app shutdown sequence
+[2024-07-01 12:46:29,331] INFO [cmdtlmrouter.py router shutdown (295)]: CmdTlm router shutdown started
+[2024-07-01 12:46:29,331] INFO [cmdtlmrouter.py router shutdown (303)]: CmdTlm router shutdown completed
+[2024-07-01 12:46:29,331] INFO [telemetry.py cfsinterface.telemetry shutdown (495)]: TelemetryQueueServer shutting down
+[2024-07-01 12:46:29,360] INFO [cmdtlmrouter.py router shutdown (295)]: CmdTlm router shutdown started
+[2024-07-01 12:46:29,360] INFO [cmdtlmrouter.py router shutdown (303)]: CmdTlm router shutdown completed
+[2024-07-01 12:46:29,588] INFO [basecamp.py __main__ shutdown (693)]: Completed app shutdown sequence
+[2024-07-01 12:46:29,588] INFO [basecamp.py __main__ run_app (1543)]: Exiting app
+[2024-07-01 12:46:29,689] INFO [telemetry.py cfsinterface.telemetry _recv_tlm_handler (484)]: TelemetryQueueServer terminating receive telemetry handler thread
+[2024-07-01 12:47:39,470] INFO [basecamp.py __main__ execute (954)]: Basecamp version 1.16 initialized with mission 'basecamp', target 'cpu1' on 07/01/2024 at 12:47:39
+[2024-07-01 12:47:39,470] INFO [basecamp.py __main__ execute (955)]: Basecamp target host 127.0.0.1, command port 1234, telemetry port 1235
+[2024-07-01 12:47:39,470] INFO [cmdtlmrouter.py router set_cfs_ip_addr (190)]: cFS IP address set to ('127.0.0.1', 1234)
+[2024-07-01 12:47:39,470] INFO [cmdtlmrouter.py router __init__ (132)]: CmdTlmRouter Init: cfs_cmd_socket('127.0.0.1', 1234), gnd_tlm_socket('127.0.0.1', 1235)
+[2024-07-01 12:47:39,470] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg HK_TLM, Id: 64
+[2024-07-01 12:47:39,470] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg APP_TLM, Id: 65
+[2024-07-01 12:47:39,470] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg MEMSTATS_TLM, Id: 67
+[2024-07-01 12:47:39,470] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg HK_TLM, Id: 68
+[2024-07-01 12:47:39,470] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg SHORT_EVENT_MSG, Id: 69
+[2024-07-01 12:47:39,470] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg LONG_EVENT_MSG, Id: 70
+[2024-07-01 12:47:39,470] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg HK_TLM, Id: 71
+[2024-07-01 12:47:39,470] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg STATS_TLM, Id: 72
+[2024-07-01 12:47:39,470] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg ALLSUBS_TLM, Id: 73
+[2024-07-01 12:47:39,470] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg ONESUB_TLM, Id: 74
+[2024-07-01 12:47:39,470] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TBL, Msg HK_TLM, Id: 75
+[2024-07-01 12:47:39,470] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TBL, Msg REG_TLM, Id: 76
+[2024-07-01 12:47:39,470] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TIME, Msg HK_TLM, Id: 77
+[2024-07-01 12:47:39,470] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TIME, Msg DIAG_TLM, Id: 78
+[2024-07-01 12:47:39,470] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CI_LAB, Msg HK_TLM, Id: 79
+[2024-07-01 12:47:39,470] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg HK_TLM, Id: 80
+[2024-07-01 12:47:39,470] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg FILE_INFO_TLM, Id: 81
+[2024-07-01 12:47:39,470] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg DIR_LIST_TLM, Id: 82
+[2024-07-01 12:47:39,470] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg OPEN_FILE_TLM, Id: 83
+[2024-07-01 12:47:39,471] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg FILE_SYS_TBL_TLM, Id: 84
+[2024-07-01 12:47:39,471] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg HK_TLM, Id: 85
+[2024-07-01 12:47:39,471] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg START_FOTP_TLM, Id: 86
+[2024-07-01 12:47:39,471] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg FOTP_DATA_SEGMENT_TLM, Id: 87
+[2024-07-01 12:47:39,471] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg FINISH_FOTP_TLM, Id: 88
+[2024-07-01 12:47:39,471] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg HK_TLM, Id: 89
+[2024-07-01 12:47:39,471] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg DIAG_TLM, Id: 90
+[2024-07-01 12:47:39,471] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg TBL_ENTRY_TLM, Id: 91
+[2024-07-01 12:47:39,471] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg HK_TLM, Id: 92
+[2024-07-01 12:47:39,471] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg DATA_TYPES_TLM, Id: 93
+[2024-07-01 12:47:39,471] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PKT_TBL_TLM, Id: 94
+[2024-07-01 12:47:39,471] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PLBK_EVENT_TLM, Id: 95
+[2024-07-01 12:47:39,471] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg SUB_WRAPPED_TLM, Id: 97
+[2024-07-01 12:47:39,471] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PUB_WRAPPED_TLM, Id: 98
+[2024-07-01 12:47:39,471] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: APP_C_DEMO, Msg STATUS_TLM, Id: 99
+[2024-07-01 12:47:39,471] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: APP_C_DEMO, Msg BIN_PLAYBK_TLM, Id: 100
+[2024-07-01 12:47:39,471] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: HI_WORLD, Msg STATUS_TLM, Id: 115
+[2024-07-01 12:47:39,471] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: HK_TLM
+[2024-07-01 12:47:39,471] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: APP_TLM
+[2024-07-01 12:47:39,471] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: MEMSTATS_TLM
+[2024-07-01 12:47:39,471] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: HK_TLM
+[2024-07-01 12:47:39,471] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: SHORT_EVENT_MSG
+[2024-07-01 12:47:39,471] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: LONG_EVENT_MSG
+[2024-07-01 12:47:39,471] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: HK_TLM
+[2024-07-01 12:47:39,471] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: STATS_TLM
+[2024-07-01 12:47:39,471] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: ALLSUBS_TLM
+[2024-07-01 12:47:39,471] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: ONESUB_TLM
+[2024-07-01 12:47:39,471] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TBL: HK_TLM
+[2024-07-01 12:47:39,471] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TBL: REG_TLM
+[2024-07-01 12:47:39,471] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TIME: HK_TLM
+[2024-07-01 12:47:39,471] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TIME: DIAG_TLM
+[2024-07-01 12:47:39,471] INFO [telemetry.py cfsinterface.telemetry _recv_tlm_handler (454)]: TelemetryQueueServer started receive telemetry handler thread
+[2024-07-01 12:47:39,471] INFO [basecamp.py __main__ execute (990)]: Successfully created application objects
+[2024-07-01 12:47:39,472] INFO [cmdtlmrouter.py router tlm_dest_connect_thread (274)]: Starting tlm_dest_connect_thread
+[2024-07-01 12:59:52,730] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-01 13:00:31,897] INFO [cmdtlmrouter.py router manage_routes (263)]: Router Control Command: ['ClosePort', '9003']
+[2024-07-01 13:00:31,898] INFO [cmdtlmrouter.py router remove_gnd_tlm_dest (179)]: Removed telemetry destination port 9003
+[2024-07-01 13:01:16,917] INFO [cmdtlmrouter.py router manage_routes (263)]: Router Control Command: ['ClosePort', '9004']
+[2024-07-01 13:01:16,918] INFO [cmdtlmrouter.py router remove_gnd_tlm_dest (179)]: Removed telemetry destination port 9004
+[2024-07-01 13:01:35,131] INFO [cmdtlmrouter.py router manage_routes (263)]: Router Control Command: ['ClosePort', '9005']
+[2024-07-01 13:01:35,132] INFO [cmdtlmrouter.py router remove_gnd_tlm_dest (179)]: Removed telemetry destination port 9005
+[2024-07-01 13:09:13,015] INFO [basecamp.py __main__ execute (1257)]: Killing cFS Process
+[2024-07-01 13:10:44,241] INFO [cfstarget.py tools.cfstarget remove_app_tables (578)]: Successfully removed /home/francisco/basecamp/cfs-basecamp/cfe-eds-framework/basecamp_defs/cpu1_hi_world_ini.json from /home/francisco/basecamp/cfs-basecamp/cfe-eds-framework/basecamp_defs
+[2024-07-01 13:10:44,247] INFO [cfstarget.py tools.cfstarget restore_targets_cmake (657)]: Removed hi_world from /home/francisco/basecamp/cfs-basecamp/cfe-eds-framework/basecamp_defs/targets.cmake
+[2024-07-01 13:10:44,247] INFO [cfstarget.py tools.cfstarget restore_targets_cmake (663)]: Removed hi_world_ini.json from /home/francisco/basecamp/cfs-basecamp/cfe-eds-framework/basecamp_defs/targets.cmake
+[2024-07-01 13:10:44,262] INFO [cfstarget.py tools.cfstarget remove_app_src_files (782)]: Successfully removed /home/francisco/basecamp/cfs-basecamp/usr/apps/hi_world
+[2024-07-01 13:10:54,150] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-01 13:11:24,702] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-01 13:11:35,238] INFO [cmdtlmrouter.py router manage_routes (263)]: Router Control Command: ['ClosePort', '9006']
+[2024-07-01 13:11:35,239] INFO [cmdtlmrouter.py router remove_gnd_tlm_dest (179)]: Removed telemetry destination port 9006
+[2024-07-01 13:11:36,153] INFO [basecamp.py __main__ shutdown (685)]: Starting app shutdown sequence
+[2024-07-01 13:11:36,154] INFO [basecamp.py __main__ shutdown (687)]: Killing cFS Process
+[2024-07-01 13:11:36,154] INFO [cmdtlmrouter.py router shutdown (295)]: CmdTlm router shutdown started
+[2024-07-01 13:11:36,154] INFO [cmdtlmrouter.py router shutdown (303)]: CmdTlm router shutdown completed
+[2024-07-01 13:11:36,154] INFO [telemetry.py cfsinterface.telemetry shutdown (495)]: TelemetryQueueServer shutting down
+[2024-07-01 13:11:36,240] INFO [cmdtlmrouter.py router shutdown (295)]: CmdTlm router shutdown started
+[2024-07-01 13:11:36,240] INFO [cmdtlmrouter.py router shutdown (303)]: CmdTlm router shutdown completed
+[2024-07-01 13:11:36,415] INFO [basecamp.py __main__ shutdown (693)]: Completed app shutdown sequence
+[2024-07-01 13:11:36,416] INFO [basecamp.py __main__ run_app (1543)]: Exiting app
+[2024-07-01 13:11:36,574] INFO [telemetry.py cfsinterface.telemetry _recv_tlm_handler (484)]: TelemetryQueueServer terminating receive telemetry handler thread
+[2024-07-01 13:11:38,538] INFO [basecamp.py __main__ execute (954)]: Basecamp version 1.16 initialized with mission 'basecamp', target 'cpu1' on 07/01/2024 at 13:11:38
+[2024-07-01 13:11:38,538] INFO [basecamp.py __main__ execute (955)]: Basecamp target host 127.0.0.1, command port 1234, telemetry port 1235
+[2024-07-01 13:11:38,538] INFO [cmdtlmrouter.py router set_cfs_ip_addr (190)]: cFS IP address set to ('127.0.0.1', 1234)
+[2024-07-01 13:11:38,538] INFO [cmdtlmrouter.py router __init__ (132)]: CmdTlmRouter Init: cfs_cmd_socket('127.0.0.1', 1234), gnd_tlm_socket('127.0.0.1', 1235)
+[2024-07-01 13:11:38,538] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg HK_TLM, Id: 64
+[2024-07-01 13:11:38,538] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg APP_TLM, Id: 65
+[2024-07-01 13:11:38,538] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg MEMSTATS_TLM, Id: 67
+[2024-07-01 13:11:38,538] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg HK_TLM, Id: 68
+[2024-07-01 13:11:38,538] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg SHORT_EVENT_MSG, Id: 69
+[2024-07-01 13:11:38,538] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg LONG_EVENT_MSG, Id: 70
+[2024-07-01 13:11:38,538] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg HK_TLM, Id: 71
+[2024-07-01 13:11:38,538] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg STATS_TLM, Id: 72
+[2024-07-01 13:11:38,538] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg ALLSUBS_TLM, Id: 73
+[2024-07-01 13:11:38,538] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg ONESUB_TLM, Id: 74
+[2024-07-01 13:11:38,538] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TBL, Msg HK_TLM, Id: 75
+[2024-07-01 13:11:38,538] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TBL, Msg REG_TLM, Id: 76
+[2024-07-01 13:11:38,538] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TIME, Msg HK_TLM, Id: 77
+[2024-07-01 13:11:38,538] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TIME, Msg DIAG_TLM, Id: 78
+[2024-07-01 13:11:38,538] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CI_LAB, Msg HK_TLM, Id: 79
+[2024-07-01 13:11:38,538] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg HK_TLM, Id: 80
+[2024-07-01 13:11:38,538] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg FILE_INFO_TLM, Id: 81
+[2024-07-01 13:11:38,538] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg DIR_LIST_TLM, Id: 82
+[2024-07-01 13:11:38,539] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg OPEN_FILE_TLM, Id: 83
+[2024-07-01 13:11:38,539] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg FILE_SYS_TBL_TLM, Id: 84
+[2024-07-01 13:11:38,539] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg HK_TLM, Id: 85
+[2024-07-01 13:11:38,539] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg START_FOTP_TLM, Id: 86
+[2024-07-01 13:11:38,539] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg FOTP_DATA_SEGMENT_TLM, Id: 87
+[2024-07-01 13:11:38,539] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg FINISH_FOTP_TLM, Id: 88
+[2024-07-01 13:11:38,539] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg HK_TLM, Id: 89
+[2024-07-01 13:11:38,539] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg DIAG_TLM, Id: 90
+[2024-07-01 13:11:38,539] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg TBL_ENTRY_TLM, Id: 91
+[2024-07-01 13:11:38,539] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg HK_TLM, Id: 92
+[2024-07-01 13:11:38,539] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg DATA_TYPES_TLM, Id: 93
+[2024-07-01 13:11:38,539] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PKT_TBL_TLM, Id: 94
+[2024-07-01 13:11:38,539] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PLBK_EVENT_TLM, Id: 95
+[2024-07-01 13:11:38,539] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg SUB_WRAPPED_TLM, Id: 97
+[2024-07-01 13:11:38,539] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PUB_WRAPPED_TLM, Id: 98
+[2024-07-01 13:11:38,539] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: APP_C_DEMO, Msg STATUS_TLM, Id: 99
+[2024-07-01 13:11:38,539] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: APP_C_DEMO, Msg BIN_PLAYBK_TLM, Id: 100
+[2024-07-01 13:11:38,539] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: HK_TLM
+[2024-07-01 13:11:38,539] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: APP_TLM
+[2024-07-01 13:11:38,539] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: MEMSTATS_TLM
+[2024-07-01 13:11:38,539] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: HK_TLM
+[2024-07-01 13:11:38,539] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: SHORT_EVENT_MSG
+[2024-07-01 13:11:38,539] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: LONG_EVENT_MSG
+[2024-07-01 13:11:38,539] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: HK_TLM
+[2024-07-01 13:11:38,539] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: STATS_TLM
+[2024-07-01 13:11:38,539] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: ALLSUBS_TLM
+[2024-07-01 13:11:38,539] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: ONESUB_TLM
+[2024-07-01 13:11:38,539] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TBL: HK_TLM
+[2024-07-01 13:11:38,539] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TBL: REG_TLM
+[2024-07-01 13:11:38,539] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TIME: HK_TLM
+[2024-07-01 13:11:38,539] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TIME: DIAG_TLM
+[2024-07-01 13:11:38,539] INFO [telemetry.py cfsinterface.telemetry _recv_tlm_handler (454)]: TelemetryQueueServer started receive telemetry handler thread
+[2024-07-01 13:11:38,539] INFO [basecamp.py __main__ execute (990)]: Successfully created application objects
+[2024-07-01 13:11:38,540] INFO [cmdtlmrouter.py router tlm_dest_connect_thread (274)]: Starting tlm_dest_connect_thread
+[2024-07-01 13:11:48,822] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-01 13:11:59,706] INFO [cmdtlmrouter.py router manage_routes (263)]: Router Control Command: ['ClosePort', '9003']
+[2024-07-01 13:11:59,706] INFO [cmdtlmrouter.py router remove_gnd_tlm_dest (179)]: Removed telemetry destination port 9003
+[2024-07-01 13:17:59,858] INFO [cmdtlmrouter.py router manage_routes (263)]: Router Control Command: ['ClosePort', '9004']
+[2024-07-01 13:17:59,858] INFO [cmdtlmrouter.py router remove_gnd_tlm_dest (179)]: Removed telemetry destination port 9004
+[2024-07-01 13:19:36,175] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-01 13:20:24,520] INFO [basecamp.py __main__ shutdown (685)]: Starting app shutdown sequence
+[2024-07-01 13:20:24,520] INFO [basecamp.py __main__ shutdown (687)]: Killing cFS Process
+[2024-07-01 13:20:24,520] INFO [cmdtlmrouter.py router shutdown (295)]: CmdTlm router shutdown started
+[2024-07-01 13:20:24,520] INFO [cmdtlmrouter.py router shutdown (303)]: CmdTlm router shutdown completed
+[2024-07-01 13:20:24,520] INFO [telemetry.py cfsinterface.telemetry shutdown (495)]: TelemetryQueueServer shutting down
+[2024-07-01 13:20:24,555] INFO [telemetry.py cfsinterface.telemetry _recv_tlm_handler (484)]: TelemetryQueueServer terminating receive telemetry handler thread
+[2024-07-01 13:20:24,664] INFO [cmdtlmrouter.py router shutdown (295)]: CmdTlm router shutdown started
+[2024-07-01 13:20:24,664] INFO [cmdtlmrouter.py router shutdown (303)]: CmdTlm router shutdown completed
+[2024-07-01 13:20:24,808] INFO [basecamp.py __main__ shutdown (693)]: Completed app shutdown sequence
+[2024-07-01 13:20:24,808] INFO [basecamp.py __main__ run_app (1543)]: Exiting app
+[2024-07-01 13:20:27,221] INFO [basecamp.py __main__ execute (954)]: Basecamp version 1.16 initialized with mission 'basecamp', target 'cpu1' on 07/01/2024 at 13:20:27
+[2024-07-01 13:20:27,221] INFO [basecamp.py __main__ execute (955)]: Basecamp target host 127.0.0.1, command port 1234, telemetry port 1235
+[2024-07-01 13:20:27,221] INFO [cmdtlmrouter.py router set_cfs_ip_addr (190)]: cFS IP address set to ('127.0.0.1', 1234)
+[2024-07-01 13:20:27,221] INFO [cmdtlmrouter.py router __init__ (132)]: CmdTlmRouter Init: cfs_cmd_socket('127.0.0.1', 1234), gnd_tlm_socket('127.0.0.1', 1235)
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg HK_TLM, Id: 64
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg APP_TLM, Id: 65
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg MEMSTATS_TLM, Id: 67
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg HK_TLM, Id: 68
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg SHORT_EVENT_MSG, Id: 69
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg LONG_EVENT_MSG, Id: 70
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg HK_TLM, Id: 71
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg STATS_TLM, Id: 72
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg ALLSUBS_TLM, Id: 73
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg ONESUB_TLM, Id: 74
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TBL, Msg HK_TLM, Id: 75
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TBL, Msg REG_TLM, Id: 76
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TIME, Msg HK_TLM, Id: 77
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TIME, Msg DIAG_TLM, Id: 78
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CI_LAB, Msg HK_TLM, Id: 79
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg HK_TLM, Id: 80
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg FILE_INFO_TLM, Id: 81
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg DIR_LIST_TLM, Id: 82
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg OPEN_FILE_TLM, Id: 83
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg FILE_SYS_TBL_TLM, Id: 84
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg HK_TLM, Id: 85
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg START_FOTP_TLM, Id: 86
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg FOTP_DATA_SEGMENT_TLM, Id: 87
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg FINISH_FOTP_TLM, Id: 88
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg HK_TLM, Id: 89
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg DIAG_TLM, Id: 90
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg TBL_ENTRY_TLM, Id: 91
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg HK_TLM, Id: 92
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg DATA_TYPES_TLM, Id: 93
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PKT_TBL_TLM, Id: 94
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PLBK_EVENT_TLM, Id: 95
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg SUB_WRAPPED_TLM, Id: 97
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PUB_WRAPPED_TLM, Id: 98
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: APP_C_DEMO, Msg STATUS_TLM, Id: 99
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: APP_C_DEMO, Msg BIN_PLAYBK_TLM, Id: 100
+[2024-07-01 13:20:27,222] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: HI_WORLD, Msg STATUS_TLM, Id: 115
+[2024-07-01 13:20:27,223] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: HK_TLM
+[2024-07-01 13:20:27,223] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: APP_TLM
+[2024-07-01 13:20:27,223] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: MEMSTATS_TLM
+[2024-07-01 13:20:27,223] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: HK_TLM
+[2024-07-01 13:20:27,223] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: SHORT_EVENT_MSG
+[2024-07-01 13:20:27,223] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: LONG_EVENT_MSG
+[2024-07-01 13:20:27,223] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: HK_TLM
+[2024-07-01 13:20:27,223] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: STATS_TLM
+[2024-07-01 13:20:27,223] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: ALLSUBS_TLM
+[2024-07-01 13:20:27,223] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: ONESUB_TLM
+[2024-07-01 13:20:27,223] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TBL: HK_TLM
+[2024-07-01 13:20:27,223] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TBL: REG_TLM
+[2024-07-01 13:20:27,223] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TIME: HK_TLM
+[2024-07-01 13:20:27,223] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TIME: DIAG_TLM
+[2024-07-01 13:20:27,223] INFO [telemetry.py cfsinterface.telemetry _recv_tlm_handler (454)]: TelemetryQueueServer started receive telemetry handler thread
+[2024-07-01 13:20:27,223] INFO [basecamp.py __main__ execute (990)]: Successfully created application objects
+[2024-07-01 13:20:27,224] INFO [cmdtlmrouter.py router tlm_dest_connect_thread (274)]: Starting tlm_dest_connect_thread
+[2024-07-01 13:27:38,624] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-01 13:28:54,069] INFO [cmdtlmrouter.py router manage_routes (263)]: Router Control Command: ['ClosePort', '9003']
+[2024-07-01 13:28:54,069] INFO [cmdtlmrouter.py router remove_gnd_tlm_dest (179)]: Removed telemetry destination port 9003
+[2024-07-01 13:35:45,026] INFO [basecamp.py __main__ execute (1257)]: Killing cFS Process
+[2024-07-01 13:35:55,231] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-01 13:36:11,451] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-01 13:36:43,668] INFO [basecamp.py __main__ shutdown (685)]: Starting app shutdown sequence
+[2024-07-01 13:36:43,669] INFO [basecamp.py __main__ shutdown (687)]: Killing cFS Process
+[2024-07-01 13:36:43,669] INFO [cmdtlmrouter.py router shutdown (295)]: CmdTlm router shutdown started
+[2024-07-01 13:36:43,669] INFO [cmdtlmrouter.py router shutdown (303)]: CmdTlm router shutdown completed
+[2024-07-01 13:36:43,669] INFO [telemetry.py cfsinterface.telemetry shutdown (495)]: TelemetryQueueServer shutting down
+[2024-07-01 13:36:43,702] INFO [cmdtlmrouter.py router shutdown (295)]: CmdTlm router shutdown started
+[2024-07-01 13:36:43,703] INFO [cmdtlmrouter.py router shutdown (303)]: CmdTlm router shutdown completed
+[2024-07-01 13:36:43,928] INFO [basecamp.py __main__ shutdown (693)]: Completed app shutdown sequence
+[2024-07-01 13:36:43,928] INFO [basecamp.py __main__ run_app (1543)]: Exiting app
+[2024-07-01 13:36:44,017] INFO [telemetry.py cfsinterface.telemetry _recv_tlm_handler (484)]: TelemetryQueueServer terminating receive telemetry handler thread
+[2024-07-01 13:39:04,694] INFO [basecamp.py __main__ execute (954)]: Basecamp version 1.16 initialized with mission 'basecamp', target 'cpu1' on 07/01/2024 at 13:39:04
+[2024-07-01 13:39:04,694] INFO [basecamp.py __main__ execute (955)]: Basecamp target host 127.0.0.1, command port 1234, telemetry port 1235
+[2024-07-01 13:39:04,694] INFO [cmdtlmrouter.py router set_cfs_ip_addr (190)]: cFS IP address set to ('127.0.0.1', 1234)
+[2024-07-01 13:39:04,694] INFO [cmdtlmrouter.py router __init__ (132)]: CmdTlmRouter Init: cfs_cmd_socket('127.0.0.1', 1234), gnd_tlm_socket('127.0.0.1', 1235)
+[2024-07-01 13:39:04,694] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg HK_TLM, Id: 64
+[2024-07-01 13:39:04,694] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg APP_TLM, Id: 65
+[2024-07-01 13:39:04,694] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg MEMSTATS_TLM, Id: 67
+[2024-07-01 13:39:04,694] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg HK_TLM, Id: 68
+[2024-07-01 13:39:04,694] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg SHORT_EVENT_MSG, Id: 69
+[2024-07-01 13:39:04,694] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg LONG_EVENT_MSG, Id: 70
+[2024-07-01 13:39:04,694] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg HK_TLM, Id: 71
+[2024-07-01 13:39:04,694] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg STATS_TLM, Id: 72
+[2024-07-01 13:39:04,694] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg ALLSUBS_TLM, Id: 73
+[2024-07-01 13:39:04,694] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg ONESUB_TLM, Id: 74
+[2024-07-01 13:39:04,694] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TBL, Msg HK_TLM, Id: 75
+[2024-07-01 13:39:04,694] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TBL, Msg REG_TLM, Id: 76
+[2024-07-01 13:39:04,694] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TIME, Msg HK_TLM, Id: 77
+[2024-07-01 13:39:04,694] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TIME, Msg DIAG_TLM, Id: 78
+[2024-07-01 13:39:04,694] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CI_LAB, Msg HK_TLM, Id: 79
+[2024-07-01 13:39:04,694] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg HK_TLM, Id: 80
+[2024-07-01 13:39:04,694] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg FILE_INFO_TLM, Id: 81
+[2024-07-01 13:39:04,694] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg DIR_LIST_TLM, Id: 82
+[2024-07-01 13:39:04,694] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg OPEN_FILE_TLM, Id: 83
+[2024-07-01 13:39:04,694] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg FILE_SYS_TBL_TLM, Id: 84
+[2024-07-01 13:39:04,694] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg HK_TLM, Id: 85
+[2024-07-01 13:39:04,694] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg START_FOTP_TLM, Id: 86
+[2024-07-01 13:39:04,694] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg FOTP_DATA_SEGMENT_TLM, Id: 87
+[2024-07-01 13:39:04,694] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg FINISH_FOTP_TLM, Id: 88
+[2024-07-01 13:39:04,694] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg HK_TLM, Id: 89
+[2024-07-01 13:39:04,694] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg DIAG_TLM, Id: 90
+[2024-07-01 13:39:04,694] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg TBL_ENTRY_TLM, Id: 91
+[2024-07-01 13:39:04,694] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg HK_TLM, Id: 92
+[2024-07-01 13:39:04,694] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg DATA_TYPES_TLM, Id: 93
+[2024-07-01 13:39:04,694] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PKT_TBL_TLM, Id: 94
+[2024-07-01 13:39:04,695] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PLBK_EVENT_TLM, Id: 95
+[2024-07-01 13:39:04,695] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg SUB_WRAPPED_TLM, Id: 97
+[2024-07-01 13:39:04,695] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PUB_WRAPPED_TLM, Id: 98
+[2024-07-01 13:39:04,695] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: APP_C_DEMO, Msg STATUS_TLM, Id: 99
+[2024-07-01 13:39:04,695] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: APP_C_DEMO, Msg BIN_PLAYBK_TLM, Id: 100
+[2024-07-01 13:39:04,695] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: HI_WORLD, Msg STATUS_TLM, Id: 115
+[2024-07-01 13:39:04,695] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: HK_TLM
+[2024-07-01 13:39:04,695] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: APP_TLM
+[2024-07-01 13:39:04,695] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: MEMSTATS_TLM
+[2024-07-01 13:39:04,695] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: HK_TLM
+[2024-07-01 13:39:04,695] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: SHORT_EVENT_MSG
+[2024-07-01 13:39:04,695] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: LONG_EVENT_MSG
+[2024-07-01 13:39:04,695] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: HK_TLM
+[2024-07-01 13:39:04,695] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: STATS_TLM
+[2024-07-01 13:39:04,695] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: ALLSUBS_TLM
+[2024-07-01 13:39:04,695] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: ONESUB_TLM
+[2024-07-01 13:39:04,695] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TBL: HK_TLM
+[2024-07-01 13:39:04,695] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TBL: REG_TLM
+[2024-07-01 13:39:04,695] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TIME: HK_TLM
+[2024-07-01 13:39:04,695] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TIME: DIAG_TLM
+[2024-07-01 13:39:04,695] INFO [telemetry.py cfsinterface.telemetry _recv_tlm_handler (454)]: TelemetryQueueServer started receive telemetry handler thread
+[2024-07-01 13:39:04,695] INFO [basecamp.py __main__ execute (990)]: Successfully created application objects
+[2024-07-01 13:39:04,696] INFO [cmdtlmrouter.py router tlm_dest_connect_thread (274)]: Starting tlm_dest_connect_thread
+[2024-07-01 13:39:11,128] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-01 13:43:18,733] INFO [cmdtlmrouter.py router manage_routes (263)]: Router Control Command: ['ClosePort', '9003']
+[2024-07-01 13:43:18,733] INFO [cmdtlmrouter.py router remove_gnd_tlm_dest (179)]: Removed telemetry destination port 9003
+[2024-07-01 13:43:21,625] INFO [basecamp.py __main__ execute (1257)]: Killing cFS Process
+[2024-07-01 13:48:43,847] INFO [cmdtlmrouter.py router manage_routes (263)]: Router Control Command: ['ClosePort', '9004']
+[2024-07-01 13:48:43,848] INFO [cmdtlmrouter.py router remove_gnd_tlm_dest (179)]: Removed telemetry destination port 9004
+[2024-07-01 13:57:56,700] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-01 13:58:12,363] INFO [basecamp.py __main__ shutdown (685)]: Starting app shutdown sequence
+[2024-07-01 13:58:12,363] INFO [cmdtlmrouter.py router shutdown (295)]: CmdTlm router shutdown started
+[2024-07-01 13:58:12,363] INFO [cmdtlmrouter.py router shutdown (303)]: CmdTlm router shutdown completed
+[2024-07-01 13:58:12,363] INFO [telemetry.py cfsinterface.telemetry shutdown (495)]: TelemetryQueueServer shutting down
+[2024-07-01 13:58:12,460] INFO [cmdtlmrouter.py router shutdown (295)]: CmdTlm router shutdown started
+[2024-07-01 13:58:12,461] INFO [cmdtlmrouter.py router shutdown (303)]: CmdTlm router shutdown completed
+[2024-07-01 13:58:12,621] INFO [basecamp.py __main__ shutdown (693)]: Completed app shutdown sequence
+[2024-07-01 13:58:12,621] INFO [basecamp.py __main__ run_app (1543)]: Exiting app
+[2024-07-01 13:58:12,770] INFO [telemetry.py cfsinterface.telemetry _recv_tlm_handler (484)]: TelemetryQueueServer terminating receive telemetry handler thread
+[2024-07-01 13:58:15,862] INFO [basecamp.py __main__ execute (954)]: Basecamp version 1.16 initialized with mission 'basecamp', target 'cpu1' on 07/01/2024 at 13:58:15
+[2024-07-01 13:58:15,862] INFO [basecamp.py __main__ execute (955)]: Basecamp target host 127.0.0.1, command port 1234, telemetry port 1235
+[2024-07-01 13:58:15,862] INFO [cmdtlmrouter.py router set_cfs_ip_addr (190)]: cFS IP address set to ('127.0.0.1', 1234)
+[2024-07-01 13:58:15,862] INFO [cmdtlmrouter.py router __init__ (132)]: CmdTlmRouter Init: cfs_cmd_socket('127.0.0.1', 1234), gnd_tlm_socket('127.0.0.1', 1235)
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg HK_TLM, Id: 64
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg APP_TLM, Id: 65
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg MEMSTATS_TLM, Id: 67
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg HK_TLM, Id: 68
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg SHORT_EVENT_MSG, Id: 69
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg LONG_EVENT_MSG, Id: 70
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg HK_TLM, Id: 71
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg STATS_TLM, Id: 72
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg ALLSUBS_TLM, Id: 73
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg ONESUB_TLM, Id: 74
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TBL, Msg HK_TLM, Id: 75
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TBL, Msg REG_TLM, Id: 76
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TIME, Msg HK_TLM, Id: 77
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TIME, Msg DIAG_TLM, Id: 78
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CI_LAB, Msg HK_TLM, Id: 79
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg HK_TLM, Id: 80
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg FILE_INFO_TLM, Id: 81
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg DIR_LIST_TLM, Id: 82
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg OPEN_FILE_TLM, Id: 83
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg FILE_SYS_TBL_TLM, Id: 84
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg HK_TLM, Id: 85
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg START_FOTP_TLM, Id: 86
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg FOTP_DATA_SEGMENT_TLM, Id: 87
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg FINISH_FOTP_TLM, Id: 88
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg HK_TLM, Id: 89
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg DIAG_TLM, Id: 90
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg TBL_ENTRY_TLM, Id: 91
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg HK_TLM, Id: 92
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg DATA_TYPES_TLM, Id: 93
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PKT_TBL_TLM, Id: 94
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PLBK_EVENT_TLM, Id: 95
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg SUB_WRAPPED_TLM, Id: 97
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PUB_WRAPPED_TLM, Id: 98
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: APP_C_DEMO, Msg STATUS_TLM, Id: 99
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: APP_C_DEMO, Msg BIN_PLAYBK_TLM, Id: 100
+[2024-07-01 13:58:15,863] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: HI_WORLD, Msg STATUS_TLM, Id: 115
+[2024-07-01 13:58:15,863] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: HK_TLM
+[2024-07-01 13:58:15,863] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: APP_TLM
+[2024-07-01 13:58:15,863] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: MEMSTATS_TLM
+[2024-07-01 13:58:15,863] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: HK_TLM
+[2024-07-01 13:58:15,863] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: SHORT_EVENT_MSG
+[2024-07-01 13:58:15,863] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: LONG_EVENT_MSG
+[2024-07-01 13:58:15,863] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: HK_TLM
+[2024-07-01 13:58:15,863] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: STATS_TLM
+[2024-07-01 13:58:15,863] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: ALLSUBS_TLM
+[2024-07-01 13:58:15,863] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: ONESUB_TLM
+[2024-07-01 13:58:15,863] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TBL: HK_TLM
+[2024-07-01 13:58:15,863] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TBL: REG_TLM
+[2024-07-01 13:58:15,863] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TIME: HK_TLM
+[2024-07-01 13:58:15,863] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TIME: DIAG_TLM
+[2024-07-01 13:58:15,864] INFO [telemetry.py cfsinterface.telemetry _recv_tlm_handler (454)]: TelemetryQueueServer started receive telemetry handler thread
+[2024-07-01 13:58:15,864] INFO [basecamp.py __main__ execute (990)]: Successfully created application objects
+[2024-07-01 13:58:15,864] INFO [cmdtlmrouter.py router tlm_dest_connect_thread (274)]: Starting tlm_dest_connect_thread
+[2024-07-01 13:58:18,535] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-01 13:58:35,126] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-01 14:04:43,954] INFO [cmdtlmrouter.py router manage_routes (263)]: Router Control Command: ['ClosePort', '9003']
+[2024-07-01 14:04:43,955] INFO [cmdtlmrouter.py router remove_gnd_tlm_dest (179)]: Removed telemetry destination port 9003
+[2024-07-01 14:09:12,579] INFO [basecamp.py __main__ execute (1257)]: Killing cFS Process
+[2024-07-01 14:09:26,881] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-01 14:10:37,601] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-01 14:10:39,640] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (479)]: EDS datagram decode exception. Datagram  = 
+ b'\x08s\xc0\x01\x00\x0b\x00\x0fH\xac\x00\x17\x00\x00\x00\x00\x00\x00'
+
+[2024-07-01 14:10:39,650] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (480)]: None
+[2024-07-01 14:10:43,657] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (479)]: EDS datagram decode exception. Datagram  = 
+ b'\x08s\xc0\x02\x00\x0b\x00\x0fH\xb0\x00\x12\x00\x00\x00\x00\x00\x00'
+
+[2024-07-01 14:10:43,658] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (480)]: None
+[2024-07-01 14:10:47,665] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (479)]: EDS datagram decode exception. Datagram  = 
+ b'\x08s\xc0\x03\x00\x0b\x00\x0fH\xb4\x00\x16\x00\x00\x00\x00\x00\x00'
+
+[2024-07-01 14:10:47,666] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (480)]: None
+[2024-07-01 14:10:51,673] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (479)]: EDS datagram decode exception. Datagram  = 
+ b'\x08s\xc0\x04\x00\x0b\x00\x0fH\xb8\x00\x13\x00\x00\x00\x00\x00\x00'
+
+[2024-07-01 14:10:51,674] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (480)]: None
+[2024-07-01 14:10:55,681] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (479)]: EDS datagram decode exception. Datagram  = 
+ b'\x08s\xc0\x05\x00\x0b\x00\x0fH\xbc\x00\x12\x00\x00\x00\x00\x00\x00'
+
+[2024-07-01 14:10:55,682] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (480)]: None
+[2024-07-01 14:10:59,690] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (479)]: EDS datagram decode exception. Datagram  = 
+ b'\x08s\xc0\x06\x00\x0b\x00\x0fH\xc0\x00\x13\x00\x00\x00\x00\x00\x00'
+
+[2024-07-01 14:10:59,693] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (480)]: None
+[2024-07-01 14:11:03,700] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (479)]: EDS datagram decode exception. Datagram  = 
+ b'\x08s\xc0\x07\x00\x0b\x00\x0fH\xc4\x00\x14\x00\x00\x00\x00\x00\x00'
+
+[2024-07-01 14:11:03,701] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (480)]: None
+[2024-07-01 14:11:07,708] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (479)]: EDS datagram decode exception. Datagram  = 
+ b'\x08s\xc0\x08\x00\x0b\x00\x0fH\xc8\x00\x14\x00\x00\x00\x00\x00\x00'
+
+[2024-07-01 14:11:07,708] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (480)]: None
+[2024-07-01 14:11:11,715] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (479)]: EDS datagram decode exception. Datagram  = 
+ b'\x08s\xc0\t\x00\x0b\x00\x0fH\xcc\x00\x18\x00\x00\x00\x00\x00\x00'
+
+[2024-07-01 14:11:11,716] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (480)]: None
+[2024-07-01 14:11:15,724] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (479)]: EDS datagram decode exception. Datagram  = 
+ b'\x08s\xc0\n\x00\x0b\x00\x0fH\xcf\xc0\x19\x00\x00\x00\x00\x00\x00'
+
+[2024-07-01 14:11:15,724] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (480)]: None
+[2024-07-01 14:11:19,732] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (479)]: EDS datagram decode exception. Datagram  = 
+ b'\x08s\xc0\x0b\x00\x0b\x00\x0fH\xd4\x00\x13\x00\x01\x00\x00\x00\x00'
+
+[2024-07-01 14:11:19,732] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (480)]: None
+[2024-07-01 14:11:23,740] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (479)]: EDS datagram decode exception. Datagram  = 
+ b'\x08s\xc0\x0c\x00\x0b\x00\x0fH\xd8\x00\x12\x00\x01\x00\x00\x00\x00'
+
+[2024-07-01 14:11:23,740] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (480)]: None
+[2024-07-01 14:11:27,748] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (479)]: EDS datagram decode exception. Datagram  = 
+ b'\x08s\xc0\r\x00\x0b\x00\x0fH\xdb\xc0\x1b\x00\x01\x00\x00\x00\x00'
+
+[2024-07-01 14:11:27,749] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (480)]: None
+[2024-07-01 14:11:31,756] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (479)]: EDS datagram decode exception. Datagram  = 
+ b'\x08s\xc0\x0e\x00\x0b\x00\x0fH\xdf\xc0\x18\x00\x01\x00\x00\x00\x00'
+
+[2024-07-01 14:11:31,757] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (480)]: None
+[2024-07-01 14:11:35,765] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (479)]: EDS datagram decode exception. Datagram  = 
+ b'\x08s\xc0\x0f\x00\x0b\x00\x0fH\xe4\x00\x0c\x00\x02\x00\x00\x00\x00'
+
+[2024-07-01 14:11:35,765] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (480)]: None
+[2024-07-01 14:11:39,773] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (479)]: EDS datagram decode exception. Datagram  = 
+ b'\x08s\xc0\x10\x00\x0b\x00\x0fH\xe8\x00\x06\x00\x02\x00\x00\x00\x00'
+
+[2024-07-01 14:11:39,773] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (480)]: None
+[2024-07-01 14:11:43,780] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (479)]: EDS datagram decode exception. Datagram  = 
+ b'\x08s\xc0\x11\x00\x0b\x00\x0fH\xec\x00\x07\x00\x02\x00\x00\x00\x00'
+
+[2024-07-01 14:11:43,781] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (480)]: None
+[2024-07-01 14:11:47,788] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (479)]: EDS datagram decode exception. Datagram  = 
+ b'\x08s\xc0\x12\x00\x0b\x00\x0fH\xf0\x00\x0c\x00\x02\x00\x00\x00\x00'
+
+[2024-07-01 14:11:47,789] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (480)]: None
+[2024-07-01 14:11:51,797] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (479)]: EDS datagram decode exception. Datagram  = 
+ b'\x08s\xc0\x13\x00\x0b\x00\x0fH\xf4\x00\x05\x00\x02\x00\x00\x00\x00'
+
+[2024-07-01 14:11:51,797] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (480)]: None
+[2024-07-01 14:11:55,805] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (479)]: EDS datagram decode exception. Datagram  = 
+ b'\x08s\xc0\x14\x00\x0b\x00\x0fH\xf8\x00\x0c\x00\x02\x00\x00\x00\x00'
+
+[2024-07-01 14:11:55,806] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (480)]: None
+[2024-07-01 14:11:57,648] INFO [cmdtlmrouter.py router manage_routes (263)]: Router Control Command: ['ClosePort', '9004']
+[2024-07-01 14:11:57,648] INFO [cmdtlmrouter.py router remove_gnd_tlm_dest (179)]: Removed telemetry destination port 9004
+[2024-07-01 14:11:59,813] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (479)]: EDS datagram decode exception. Datagram  = 
+ b'\x08s\xc0\x15\x00\x0b\x00\x0fH\xfc\x00\n\x00\x02\x00\x00\x00\x00'
+
+[2024-07-01 14:11:59,814] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (480)]: None
+[2024-07-01 14:12:02,190] INFO [basecamp.py __main__ execute (1257)]: Killing cFS Process
+[2024-07-01 14:14:01,240] INFO [cmdtlmrouter.py router manage_routes (263)]: Router Control Command: ['ClosePort', '9005']
+[2024-07-01 14:14:01,241] INFO [cmdtlmrouter.py router remove_gnd_tlm_dest (179)]: Removed telemetry destination port 9005
+[2024-07-01 14:15:25,009] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-01 14:15:36,939] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-01 14:15:39,087] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (479)]: EDS datagram decode exception. Datagram  = 
+ b'\x08s\xc0\x01\x00\x0b\x00\x0fI\x00\x00\x12\x00\x00\x00\x00\x00\x00'
+
+[2024-07-01 14:15:39,088] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (480)]: None
+[2024-07-01 14:15:43,103] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (479)]: EDS datagram decode exception. Datagram  = 
+ b'\x08s\xc0\x02\x00\x0b\x00\x0fI\x04\x00\x14\x00\x00\x00\x00\x00\x00'
+
+[2024-07-01 14:15:43,104] ERROR [telemetry.py cfsinterface.telemetry _recv_tlm_handler (480)]: None
+[2024-07-01 14:15:45,652] INFO [basecamp.py __main__ execute (1257)]: Killing cFS Process
+[2024-07-01 14:15:49,617] INFO [basecamp.py __main__ shutdown (685)]: Starting app shutdown sequence
+[2024-07-01 14:15:49,618] INFO [cmdtlmrouter.py router shutdown (295)]: CmdTlm router shutdown started
+[2024-07-01 14:15:49,618] INFO [cmdtlmrouter.py router shutdown (303)]: CmdTlm router shutdown completed
+[2024-07-01 14:15:49,618] INFO [telemetry.py cfsinterface.telemetry shutdown (495)]: TelemetryQueueServer shutting down
+[2024-07-01 14:15:49,741] INFO [cmdtlmrouter.py router shutdown (295)]: CmdTlm router shutdown started
+[2024-07-01 14:15:49,741] INFO [cmdtlmrouter.py router shutdown (303)]: CmdTlm router shutdown completed
+[2024-07-01 14:15:49,877] INFO [basecamp.py __main__ shutdown (693)]: Completed app shutdown sequence
+[2024-07-01 14:15:49,878] INFO [basecamp.py __main__ run_app (1543)]: Exiting app
+[2024-07-01 14:15:50,114] INFO [telemetry.py cfsinterface.telemetry _recv_tlm_handler (484)]: TelemetryQueueServer terminating receive telemetry handler thread
+[2024-07-01 14:15:52,124] INFO [basecamp.py __main__ execute (954)]: Basecamp version 1.16 initialized with mission 'basecamp', target 'cpu1' on 07/01/2024 at 14:15:52
+[2024-07-01 14:15:52,124] INFO [basecamp.py __main__ execute (955)]: Basecamp target host 127.0.0.1, command port 1234, telemetry port 1235
+[2024-07-01 14:15:52,124] INFO [cmdtlmrouter.py router set_cfs_ip_addr (190)]: cFS IP address set to ('127.0.0.1', 1234)
+[2024-07-01 14:15:52,124] INFO [cmdtlmrouter.py router __init__ (132)]: CmdTlmRouter Init: cfs_cmd_socket('127.0.0.1', 1234), gnd_tlm_socket('127.0.0.1', 1235)
+[2024-07-01 14:15:52,124] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg HK_TLM, Id: 64
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg APP_TLM, Id: 65
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg MEMSTATS_TLM, Id: 67
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg HK_TLM, Id: 68
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg SHORT_EVENT_MSG, Id: 69
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg LONG_EVENT_MSG, Id: 70
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg HK_TLM, Id: 71
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg STATS_TLM, Id: 72
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg ALLSUBS_TLM, Id: 73
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg ONESUB_TLM, Id: 74
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TBL, Msg HK_TLM, Id: 75
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TBL, Msg REG_TLM, Id: 76
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TIME, Msg HK_TLM, Id: 77
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TIME, Msg DIAG_TLM, Id: 78
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CI_LAB, Msg HK_TLM, Id: 79
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg HK_TLM, Id: 80
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg FILE_INFO_TLM, Id: 81
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg DIR_LIST_TLM, Id: 82
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg OPEN_FILE_TLM, Id: 83
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg FILE_SYS_TBL_TLM, Id: 84
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg HK_TLM, Id: 85
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg START_FOTP_TLM, Id: 86
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg FOTP_DATA_SEGMENT_TLM, Id: 87
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg FINISH_FOTP_TLM, Id: 88
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg HK_TLM, Id: 89
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg DIAG_TLM, Id: 90
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg TBL_ENTRY_TLM, Id: 91
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg HK_TLM, Id: 92
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg DATA_TYPES_TLM, Id: 93
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PKT_TBL_TLM, Id: 94
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PLBK_EVENT_TLM, Id: 95
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg SUB_WRAPPED_TLM, Id: 97
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PUB_WRAPPED_TLM, Id: 98
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: APP_C_DEMO, Msg STATUS_TLM, Id: 99
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: APP_C_DEMO, Msg BIN_PLAYBK_TLM, Id: 100
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: HI_WORLD, Msg STATUS_TLM, Id: 115
+[2024-07-01 14:15:52,125] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: HK_TLM
+[2024-07-01 14:15:52,125] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: APP_TLM
+[2024-07-01 14:15:52,125] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: MEMSTATS_TLM
+[2024-07-01 14:15:52,125] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: HK_TLM
+[2024-07-01 14:15:52,125] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: SHORT_EVENT_MSG
+[2024-07-01 14:15:52,125] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: LONG_EVENT_MSG
+[2024-07-01 14:15:52,125] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: HK_TLM
+[2024-07-01 14:15:52,125] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: STATS_TLM
+[2024-07-01 14:15:52,125] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: ALLSUBS_TLM
+[2024-07-01 14:15:52,125] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: ONESUB_TLM
+[2024-07-01 14:15:52,125] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TBL: HK_TLM
+[2024-07-01 14:15:52,125] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TBL: REG_TLM
+[2024-07-01 14:15:52,125] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TIME: HK_TLM
+[2024-07-01 14:15:52,125] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TIME: DIAG_TLM
+[2024-07-01 14:15:52,125] INFO [telemetry.py cfsinterface.telemetry _recv_tlm_handler (454)]: TelemetryQueueServer started receive telemetry handler thread
+[2024-07-01 14:15:52,126] INFO [basecamp.py __main__ execute (990)]: Successfully created application objects
+[2024-07-01 14:15:52,126] INFO [cmdtlmrouter.py router tlm_dest_connect_thread (274)]: Starting tlm_dest_connect_thread
+[2024-07-01 14:15:54,859] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-01 14:16:04,629] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-01 14:17:06,460] INFO [cmdtlmrouter.py router manage_routes (263)]: Router Control Command: ['ClosePort', '9003']
+[2024-07-01 14:17:06,461] INFO [cmdtlmrouter.py router remove_gnd_tlm_dest (179)]: Removed telemetry destination port 9003
+[2024-07-01 14:17:09,130] INFO [basecamp.py __main__ execute (1257)]: Killing cFS Process
+[2024-07-01 14:21:25,650] INFO [basecamp.py __main__ shutdown (685)]: Starting app shutdown sequence
+[2024-07-01 14:21:25,650] INFO [cmdtlmrouter.py router shutdown (295)]: CmdTlm router shutdown started
+[2024-07-01 14:21:25,650] INFO [cmdtlmrouter.py router shutdown (303)]: CmdTlm router shutdown completed
+[2024-07-01 14:21:25,650] INFO [telemetry.py cfsinterface.telemetry shutdown (495)]: TelemetryQueueServer shutting down
+[2024-07-01 14:21:25,669] INFO [cmdtlmrouter.py router shutdown (295)]: CmdTlm router shutdown started
+[2024-07-01 14:21:25,669] INFO [cmdtlmrouter.py router shutdown (303)]: CmdTlm router shutdown completed
+[2024-07-01 14:21:25,905] INFO [basecamp.py __main__ shutdown (693)]: Completed app shutdown sequence
+[2024-07-01 14:21:25,905] INFO [basecamp.py __main__ run_app (1543)]: Exiting app
+[2024-07-01 14:21:26,071] INFO [telemetry.py cfsinterface.telemetry _recv_tlm_handler (484)]: TelemetryQueueServer terminating receive telemetry handler thread
+[2024-07-01 14:21:28,781] INFO [basecamp.py __main__ execute (954)]: Basecamp version 1.16 initialized with mission 'basecamp', target 'cpu1' on 07/01/2024 at 14:21:28
+[2024-07-01 14:21:28,781] INFO [basecamp.py __main__ execute (955)]: Basecamp target host 127.0.0.1, command port 1234, telemetry port 1235
+[2024-07-01 14:21:28,781] INFO [cmdtlmrouter.py router set_cfs_ip_addr (190)]: cFS IP address set to ('127.0.0.1', 1234)
+[2024-07-01 14:21:28,782] INFO [cmdtlmrouter.py router __init__ (132)]: CmdTlmRouter Init: cfs_cmd_socket('127.0.0.1', 1234), gnd_tlm_socket('127.0.0.1', 1235)
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg HK_TLM, Id: 64
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg APP_TLM, Id: 65
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg MEMSTATS_TLM, Id: 67
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg HK_TLM, Id: 68
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg SHORT_EVENT_MSG, Id: 69
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg LONG_EVENT_MSG, Id: 70
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg HK_TLM, Id: 71
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg STATS_TLM, Id: 72
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg ALLSUBS_TLM, Id: 73
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg ONESUB_TLM, Id: 74
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TBL, Msg HK_TLM, Id: 75
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TBL, Msg REG_TLM, Id: 76
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TIME, Msg HK_TLM, Id: 77
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TIME, Msg DIAG_TLM, Id: 78
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CI_LAB, Msg HK_TLM, Id: 79
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg HK_TLM, Id: 80
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg FILE_INFO_TLM, Id: 81
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg DIR_LIST_TLM, Id: 82
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg OPEN_FILE_TLM, Id: 83
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg FILE_SYS_TBL_TLM, Id: 84
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg HK_TLM, Id: 85
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg START_FOTP_TLM, Id: 86
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg FOTP_DATA_SEGMENT_TLM, Id: 87
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg FINISH_FOTP_TLM, Id: 88
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg HK_TLM, Id: 89
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg DIAG_TLM, Id: 90
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg TBL_ENTRY_TLM, Id: 91
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg HK_TLM, Id: 92
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg DATA_TYPES_TLM, Id: 93
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PKT_TBL_TLM, Id: 94
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PLBK_EVENT_TLM, Id: 95
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg SUB_WRAPPED_TLM, Id: 97
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PUB_WRAPPED_TLM, Id: 98
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: APP_C_DEMO, Msg STATUS_TLM, Id: 99
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: APP_C_DEMO, Msg BIN_PLAYBK_TLM, Id: 100
+[2024-07-01 14:21:28,782] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: HI_WORLD, Msg STATUS_TLM, Id: 115
+[2024-07-01 14:21:28,782] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: HK_TLM
+[2024-07-01 14:21:28,782] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: APP_TLM
+[2024-07-01 14:21:28,782] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: MEMSTATS_TLM
+[2024-07-01 14:21:28,782] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: HK_TLM
+[2024-07-01 14:21:28,782] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: SHORT_EVENT_MSG
+[2024-07-01 14:21:28,783] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: LONG_EVENT_MSG
+[2024-07-01 14:21:28,783] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: HK_TLM
+[2024-07-01 14:21:28,783] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: STATS_TLM
+[2024-07-01 14:21:28,783] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: ALLSUBS_TLM
+[2024-07-01 14:21:28,783] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: ONESUB_TLM
+[2024-07-01 14:21:28,783] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TBL: HK_TLM
+[2024-07-01 14:21:28,783] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TBL: REG_TLM
+[2024-07-01 14:21:28,783] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TIME: HK_TLM
+[2024-07-01 14:21:28,783] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TIME: DIAG_TLM
+[2024-07-01 14:21:28,783] INFO [telemetry.py cfsinterface.telemetry _recv_tlm_handler (454)]: TelemetryQueueServer started receive telemetry handler thread
+[2024-07-01 14:21:28,783] INFO [basecamp.py __main__ execute (990)]: Successfully created application objects
+[2024-07-01 14:21:28,784] INFO [cmdtlmrouter.py router tlm_dest_connect_thread (274)]: Starting tlm_dest_connect_thread
+[2024-07-01 14:21:30,776] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-01 14:21:49,129] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-01 14:22:18,975] INFO [cmdtlmrouter.py router manage_routes (263)]: Router Control Command: ['ClosePort', '9004']
+[2024-07-01 14:22:18,976] INFO [cmdtlmrouter.py router remove_gnd_tlm_dest (179)]: Removed telemetry destination port 9004
+[2024-07-01 14:24:08,951] INFO [cmdtlmrouter.py router manage_routes (263)]: Router Control Command: ['ClosePort', '9003']
+[2024-07-01 14:24:08,952] INFO [cmdtlmrouter.py router remove_gnd_tlm_dest (179)]: Removed telemetry destination port 9003
+[2024-07-01 14:24:14,153] INFO [basecamp.py __main__ execute (1257)]: Killing cFS Process
+[2024-07-01 14:35:22,744] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-01 14:35:29,297] INFO [basecamp.py __main__ shutdown (685)]: Starting app shutdown sequence
+[2024-07-01 14:35:29,297] INFO [cmdtlmrouter.py router shutdown (295)]: CmdTlm router shutdown started
+[2024-07-01 14:35:29,298] INFO [cmdtlmrouter.py router shutdown (303)]: CmdTlm router shutdown completed
+[2024-07-01 14:35:29,298] INFO [telemetry.py cfsinterface.telemetry shutdown (495)]: TelemetryQueueServer shutting down
+[2024-07-01 14:35:29,397] INFO [cmdtlmrouter.py router shutdown (295)]: CmdTlm router shutdown started
+[2024-07-01 14:35:29,397] INFO [cmdtlmrouter.py router shutdown (303)]: CmdTlm router shutdown completed
+[2024-07-01 14:35:29,509] INFO [telemetry.py cfsinterface.telemetry _recv_tlm_handler (484)]: TelemetryQueueServer terminating receive telemetry handler thread
+[2024-07-01 14:35:29,556] INFO [basecamp.py __main__ shutdown (693)]: Completed app shutdown sequence
+[2024-07-01 14:35:29,557] INFO [basecamp.py __main__ run_app (1543)]: Exiting app
+[2024-07-01 14:35:40,877] INFO [basecamp.py __main__ execute (954)]: Basecamp version 1.16 initialized with mission 'basecamp', target 'cpu1' on 07/01/2024 at 14:35:40
+[2024-07-01 14:35:40,877] INFO [basecamp.py __main__ execute (955)]: Basecamp target host 127.0.0.1, command port 1234, telemetry port 1235
+[2024-07-01 14:35:40,877] INFO [cmdtlmrouter.py router set_cfs_ip_addr (190)]: cFS IP address set to ('127.0.0.1', 1234)
+[2024-07-01 14:35:40,877] INFO [cmdtlmrouter.py router __init__ (132)]: CmdTlmRouter Init: cfs_cmd_socket('127.0.0.1', 1234), gnd_tlm_socket('127.0.0.1', 1235)
+[2024-07-01 14:35:40,877] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg HK_TLM, Id: 64
+[2024-07-01 14:35:40,877] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg APP_TLM, Id: 65
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg MEMSTATS_TLM, Id: 67
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg HK_TLM, Id: 68
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg SHORT_EVENT_MSG, Id: 69
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg LONG_EVENT_MSG, Id: 70
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg HK_TLM, Id: 71
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg STATS_TLM, Id: 72
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg ALLSUBS_TLM, Id: 73
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg ONESUB_TLM, Id: 74
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TBL, Msg HK_TLM, Id: 75
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TBL, Msg REG_TLM, Id: 76
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TIME, Msg HK_TLM, Id: 77
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TIME, Msg DIAG_TLM, Id: 78
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CI_LAB, Msg HK_TLM, Id: 79
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg HK_TLM, Id: 80
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg FILE_INFO_TLM, Id: 81
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg DIR_LIST_TLM, Id: 82
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg OPEN_FILE_TLM, Id: 83
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg FILE_SYS_TBL_TLM, Id: 84
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg HK_TLM, Id: 85
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg START_FOTP_TLM, Id: 86
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg FOTP_DATA_SEGMENT_TLM, Id: 87
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg FINISH_FOTP_TLM, Id: 88
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg HK_TLM, Id: 89
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg DIAG_TLM, Id: 90
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg TBL_ENTRY_TLM, Id: 91
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg HK_TLM, Id: 92
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg DATA_TYPES_TLM, Id: 93
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PKT_TBL_TLM, Id: 94
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PLBK_EVENT_TLM, Id: 95
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg SUB_WRAPPED_TLM, Id: 97
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PUB_WRAPPED_TLM, Id: 98
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: APP_C_DEMO, Msg STATUS_TLM, Id: 99
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: APP_C_DEMO, Msg BIN_PLAYBK_TLM, Id: 100
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: HI_WORLD, Msg STATUS_TLM, Id: 115
+[2024-07-01 14:35:40,878] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: HK_TLM
+[2024-07-01 14:35:40,878] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: APP_TLM
+[2024-07-01 14:35:40,878] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: MEMSTATS_TLM
+[2024-07-01 14:35:40,878] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: HK_TLM
+[2024-07-01 14:35:40,878] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: SHORT_EVENT_MSG
+[2024-07-01 14:35:40,878] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: LONG_EVENT_MSG
+[2024-07-01 14:35:40,878] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: HK_TLM
+[2024-07-01 14:35:40,878] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: STATS_TLM
+[2024-07-01 14:35:40,878] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: ALLSUBS_TLM
+[2024-07-01 14:35:40,878] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: ONESUB_TLM
+[2024-07-01 14:35:40,878] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TBL: HK_TLM
+[2024-07-01 14:35:40,878] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TBL: REG_TLM
+[2024-07-01 14:35:40,878] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TIME: HK_TLM
+[2024-07-01 14:35:40,878] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TIME: DIAG_TLM
+[2024-07-01 14:35:40,878] INFO [telemetry.py cfsinterface.telemetry _recv_tlm_handler (454)]: TelemetryQueueServer started receive telemetry handler thread
+[2024-07-01 14:35:40,879] INFO [basecamp.py __main__ execute (990)]: Successfully created application objects
+[2024-07-01 14:35:40,879] INFO [cmdtlmrouter.py router tlm_dest_connect_thread (274)]: Starting tlm_dest_connect_thread
+[2024-07-01 14:35:47,889] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-01 14:35:58,429] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-01 14:37:01,015] INFO [cmdtlmrouter.py router manage_routes (263)]: Router Control Command: ['ClosePort', '9004']
+[2024-07-01 14:37:01,016] INFO [cmdtlmrouter.py router remove_gnd_tlm_dest (179)]: Removed telemetry destination port 9004
+[2024-07-01 14:38:28,347] INFO [cmdtlmrouter.py router manage_routes (263)]: Router Control Command: ['ClosePort', '9003']
+[2024-07-01 14:38:28,348] INFO [cmdtlmrouter.py router remove_gnd_tlm_dest (179)]: Removed telemetry destination port 9003
+[2024-07-01 14:44:08,886] INFO [basecamp.py __main__ shutdown (685)]: Starting app shutdown sequence
+[2024-07-01 14:44:08,887] INFO [basecamp.py __main__ shutdown (687)]: Killing cFS Process
+[2024-07-01 14:44:08,887] INFO [cmdtlmrouter.py router shutdown (295)]: CmdTlm router shutdown started
+[2024-07-01 14:44:08,887] INFO [cmdtlmrouter.py router shutdown (303)]: CmdTlm router shutdown completed
+[2024-07-01 14:44:08,887] INFO [telemetry.py cfsinterface.telemetry shutdown (495)]: TelemetryQueueServer shutting down
+[2024-07-01 14:44:08,915] INFO [cmdtlmrouter.py router shutdown (295)]: CmdTlm router shutdown started
+[2024-07-01 14:44:08,915] INFO [cmdtlmrouter.py router shutdown (303)]: CmdTlm router shutdown completed
+[2024-07-01 14:44:09,091] INFO [telemetry.py cfsinterface.telemetry _recv_tlm_handler (484)]: TelemetryQueueServer terminating receive telemetry handler thread
+[2024-07-01 14:44:09,144] INFO [basecamp.py __main__ shutdown (693)]: Completed app shutdown sequence
+[2024-07-01 14:44:09,144] INFO [basecamp.py __main__ run_app (1543)]: Exiting app
+[2024-07-01 14:44:13,087] INFO [basecamp.py __main__ execute (954)]: Basecamp version 1.16 initialized with mission 'basecamp', target 'cpu1' on 07/01/2024 at 14:44:13
+[2024-07-01 14:44:13,087] INFO [basecamp.py __main__ execute (955)]: Basecamp target host 127.0.0.1, command port 1234, telemetry port 1235
+[2024-07-01 14:44:13,087] INFO [cmdtlmrouter.py router set_cfs_ip_addr (190)]: cFS IP address set to ('127.0.0.1', 1234)
+[2024-07-01 14:44:13,087] INFO [cmdtlmrouter.py router __init__ (132)]: CmdTlmRouter Init: cfs_cmd_socket('127.0.0.1', 1234), gnd_tlm_socket('127.0.0.1', 1235)
+[2024-07-01 14:44:13,087] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg HK_TLM, Id: 64
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg APP_TLM, Id: 65
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg MEMSTATS_TLM, Id: 67
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg HK_TLM, Id: 68
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg SHORT_EVENT_MSG, Id: 69
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg LONG_EVENT_MSG, Id: 70
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg HK_TLM, Id: 71
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg STATS_TLM, Id: 72
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg ALLSUBS_TLM, Id: 73
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg ONESUB_TLM, Id: 74
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TBL, Msg HK_TLM, Id: 75
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TBL, Msg REG_TLM, Id: 76
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TIME, Msg HK_TLM, Id: 77
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TIME, Msg DIAG_TLM, Id: 78
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CI_LAB, Msg HK_TLM, Id: 79
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg HK_TLM, Id: 80
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg FILE_INFO_TLM, Id: 81
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg DIR_LIST_TLM, Id: 82
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg OPEN_FILE_TLM, Id: 83
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg FILE_SYS_TBL_TLM, Id: 84
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg HK_TLM, Id: 85
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg START_FOTP_TLM, Id: 86
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg FOTP_DATA_SEGMENT_TLM, Id: 87
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg FINISH_FOTP_TLM, Id: 88
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg HK_TLM, Id: 89
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg DIAG_TLM, Id: 90
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg TBL_ENTRY_TLM, Id: 91
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg HK_TLM, Id: 92
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg DATA_TYPES_TLM, Id: 93
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PKT_TBL_TLM, Id: 94
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PLBK_EVENT_TLM, Id: 95
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg SUB_WRAPPED_TLM, Id: 97
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PUB_WRAPPED_TLM, Id: 98
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: APP_C_DEMO, Msg STATUS_TLM, Id: 99
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: APP_C_DEMO, Msg BIN_PLAYBK_TLM, Id: 100
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: HI_WORLD, Msg STATUS_TLM, Id: 115
+[2024-07-01 14:44:13,088] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: HK_TLM
+[2024-07-01 14:44:13,088] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: APP_TLM
+[2024-07-01 14:44:13,088] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: MEMSTATS_TLM
+[2024-07-01 14:44:13,088] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: HK_TLM
+[2024-07-01 14:44:13,088] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: SHORT_EVENT_MSG
+[2024-07-01 14:44:13,088] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: LONG_EVENT_MSG
+[2024-07-01 14:44:13,088] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: HK_TLM
+[2024-07-01 14:44:13,088] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: STATS_TLM
+[2024-07-01 14:44:13,088] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: ALLSUBS_TLM
+[2024-07-01 14:44:13,088] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: ONESUB_TLM
+[2024-07-01 14:44:13,088] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TBL: HK_TLM
+[2024-07-01 14:44:13,088] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TBL: REG_TLM
+[2024-07-01 14:44:13,088] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TIME: HK_TLM
+[2024-07-01 14:44:13,088] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TIME: DIAG_TLM
+[2024-07-01 14:44:13,088] INFO [telemetry.py cfsinterface.telemetry _recv_tlm_handler (454)]: TelemetryQueueServer started receive telemetry handler thread
+[2024-07-01 14:44:13,089] INFO [basecamp.py __main__ execute (990)]: Successfully created application objects
+[2024-07-01 14:44:13,089] INFO [cmdtlmrouter.py router tlm_dest_connect_thread (274)]: Starting tlm_dest_connect_thread
+[2024-07-01 14:47:21,759] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-01 14:47:32,067] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-01 14:47:43,700] INFO [cmdtlmrouter.py router manage_routes (263)]: Router Control Command: ['ClosePort', '9003']
+[2024-07-01 14:47:43,700] INFO [cmdtlmrouter.py router remove_gnd_tlm_dest (179)]: Removed telemetry destination port 9003
+[2024-07-01 14:48:27,184] INFO [cmdtlmrouter.py router manage_routes (263)]: Router Control Command: ['ClosePort', '9004']
+[2024-07-01 14:48:27,184] INFO [cmdtlmrouter.py router remove_gnd_tlm_dest (179)]: Removed telemetry destination port 9004
+[2024-07-01 14:48:34,796] INFO [basecamp.py __main__ shutdown (685)]: Starting app shutdown sequence
+[2024-07-01 14:48:34,796] INFO [basecamp.py __main__ shutdown (687)]: Killing cFS Process
+[2024-07-01 14:48:34,796] INFO [cmdtlmrouter.py router shutdown (295)]: CmdTlm router shutdown started
+[2024-07-01 14:48:34,796] INFO [cmdtlmrouter.py router shutdown (303)]: CmdTlm router shutdown completed
+[2024-07-01 14:48:34,796] INFO [telemetry.py cfsinterface.telemetry shutdown (495)]: TelemetryQueueServer shutting down
+[2024-07-01 14:48:34,953] INFO [telemetry.py cfsinterface.telemetry _recv_tlm_handler (484)]: TelemetryQueueServer terminating receive telemetry handler thread
+[2024-07-01 14:48:35,041] INFO [cmdtlmrouter.py router shutdown (295)]: CmdTlm router shutdown started
+[2024-07-01 14:48:35,041] INFO [cmdtlmrouter.py router shutdown (303)]: CmdTlm router shutdown completed
+[2024-07-01 14:48:35,054] INFO [basecamp.py __main__ shutdown (693)]: Completed app shutdown sequence
+[2024-07-01 14:48:35,054] INFO [basecamp.py __main__ run_app (1543)]: Exiting app
+[2024-07-01 14:48:37,912] INFO [basecamp.py __main__ execute (954)]: Basecamp version 1.16 initialized with mission 'basecamp', target 'cpu1' on 07/01/2024 at 14:48:37
+[2024-07-01 14:48:37,912] INFO [basecamp.py __main__ execute (955)]: Basecamp target host 127.0.0.1, command port 1234, telemetry port 1235
+[2024-07-01 14:48:37,912] INFO [cmdtlmrouter.py router set_cfs_ip_addr (190)]: cFS IP address set to ('127.0.0.1', 1234)
+[2024-07-01 14:48:37,912] INFO [cmdtlmrouter.py router __init__ (132)]: CmdTlmRouter Init: cfs_cmd_socket('127.0.0.1', 1234), gnd_tlm_socket('127.0.0.1', 1235)
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg HK_TLM, Id: 64
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg APP_TLM, Id: 65
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg MEMSTATS_TLM, Id: 67
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg HK_TLM, Id: 68
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg SHORT_EVENT_MSG, Id: 69
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg LONG_EVENT_MSG, Id: 70
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg HK_TLM, Id: 71
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg STATS_TLM, Id: 72
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg ALLSUBS_TLM, Id: 73
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg ONESUB_TLM, Id: 74
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TBL, Msg HK_TLM, Id: 75
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TBL, Msg REG_TLM, Id: 76
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TIME, Msg HK_TLM, Id: 77
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TIME, Msg DIAG_TLM, Id: 78
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CI_LAB, Msg HK_TLM, Id: 79
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg HK_TLM, Id: 80
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg FILE_INFO_TLM, Id: 81
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg DIR_LIST_TLM, Id: 82
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg OPEN_FILE_TLM, Id: 83
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg FILE_SYS_TBL_TLM, Id: 84
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg HK_TLM, Id: 85
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg START_FOTP_TLM, Id: 86
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg FOTP_DATA_SEGMENT_TLM, Id: 87
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg FINISH_FOTP_TLM, Id: 88
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg HK_TLM, Id: 89
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg DIAG_TLM, Id: 90
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg TBL_ENTRY_TLM, Id: 91
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg HK_TLM, Id: 92
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg DATA_TYPES_TLM, Id: 93
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PKT_TBL_TLM, Id: 94
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PLBK_EVENT_TLM, Id: 95
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg SUB_WRAPPED_TLM, Id: 97
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PUB_WRAPPED_TLM, Id: 98
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: APP_C_DEMO, Msg STATUS_TLM, Id: 99
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: APP_C_DEMO, Msg BIN_PLAYBK_TLM, Id: 100
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: HI_WORLD, Msg STATUS_TLM, Id: 115
+[2024-07-01 14:48:37,913] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: HK_TLM
+[2024-07-01 14:48:37,913] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: APP_TLM
+[2024-07-01 14:48:37,913] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: MEMSTATS_TLM
+[2024-07-01 14:48:37,913] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: HK_TLM
+[2024-07-01 14:48:37,913] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: SHORT_EVENT_MSG
+[2024-07-01 14:48:37,913] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: LONG_EVENT_MSG
+[2024-07-01 14:48:37,913] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: HK_TLM
+[2024-07-01 14:48:37,913] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: STATS_TLM
+[2024-07-01 14:48:37,913] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: ALLSUBS_TLM
+[2024-07-01 14:48:37,913] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: ONESUB_TLM
+[2024-07-01 14:48:37,913] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TBL: HK_TLM
+[2024-07-01 14:48:37,913] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TBL: REG_TLM
+[2024-07-01 14:48:37,913] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TIME: HK_TLM
+[2024-07-01 14:48:37,913] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TIME: DIAG_TLM
+[2024-07-01 14:48:37,913] INFO [telemetry.py cfsinterface.telemetry _recv_tlm_handler (454)]: TelemetryQueueServer started receive telemetry handler thread
+[2024-07-01 14:48:37,914] INFO [basecamp.py __main__ execute (990)]: Successfully created application objects
+[2024-07-01 14:48:37,914] INFO [cmdtlmrouter.py router tlm_dest_connect_thread (274)]: Starting tlm_dest_connect_thread
+[2024-07-01 14:48:41,572] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-01 14:49:00,353] INFO [cmdtlmrouter.py router manage_routes (263)]: Router Control Command: ['ClosePort', '9003']
+[2024-07-01 14:49:00,354] INFO [cmdtlmrouter.py router remove_gnd_tlm_dest (179)]: Removed telemetry destination port 9003
+[2024-07-01 14:49:10,531] INFO [basecamp.py __main__ shutdown (685)]: Starting app shutdown sequence
+[2024-07-01 14:49:10,532] INFO [cmdtlmrouter.py router shutdown (295)]: CmdTlm router shutdown started
+[2024-07-01 14:49:10,532] INFO [cmdtlmrouter.py router shutdown (303)]: CmdTlm router shutdown completed
+[2024-07-01 14:49:10,532] INFO [telemetry.py cfsinterface.telemetry shutdown (495)]: TelemetryQueueServer shutting down
+[2024-07-01 14:49:10,771] INFO [cmdtlmrouter.py router shutdown (295)]: CmdTlm router shutdown started
+[2024-07-01 14:49:10,772] INFO [cmdtlmrouter.py router shutdown (303)]: CmdTlm router shutdown completed
+[2024-07-01 14:49:10,787] INFO [basecamp.py __main__ shutdown (693)]: Completed app shutdown sequence
+[2024-07-01 14:49:10,788] INFO [basecamp.py __main__ run_app (1543)]: Exiting app
+[2024-07-01 14:49:10,952] INFO [telemetry.py cfsinterface.telemetry _recv_tlm_handler (484)]: TelemetryQueueServer terminating receive telemetry handler thread
+[2024-07-01 14:49:24,148] INFO [basecamp.py __main__ execute (954)]: Basecamp version 1.16 initialized with mission 'basecamp', target 'cpu1' on 07/01/2024 at 14:49:24
+[2024-07-01 14:49:24,148] INFO [basecamp.py __main__ execute (955)]: Basecamp target host 127.0.0.1, command port 1234, telemetry port 1235
+[2024-07-01 14:49:24,148] INFO [cmdtlmrouter.py router set_cfs_ip_addr (190)]: cFS IP address set to ('127.0.0.1', 1234)
+[2024-07-01 14:49:24,149] INFO [cmdtlmrouter.py router __init__ (132)]: CmdTlmRouter Init: cfs_cmd_socket('127.0.0.1', 1234), gnd_tlm_socket('127.0.0.1', 1235)
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg HK_TLM, Id: 64
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg APP_TLM, Id: 65
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_ES, Msg MEMSTATS_TLM, Id: 67
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg HK_TLM, Id: 68
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg SHORT_EVENT_MSG, Id: 69
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_EVS, Msg LONG_EVENT_MSG, Id: 70
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg HK_TLM, Id: 71
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg STATS_TLM, Id: 72
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg ALLSUBS_TLM, Id: 73
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_SB, Msg ONESUB_TLM, Id: 74
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TBL, Msg HK_TLM, Id: 75
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TBL, Msg REG_TLM, Id: 76
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TIME, Msg HK_TLM, Id: 77
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CFE_TIME, Msg DIAG_TLM, Id: 78
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: CI_LAB, Msg HK_TLM, Id: 79
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg HK_TLM, Id: 80
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg FILE_INFO_TLM, Id: 81
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg DIR_LIST_TLM, Id: 82
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg OPEN_FILE_TLM, Id: 83
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_MGR, Msg FILE_SYS_TBL_TLM, Id: 84
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg HK_TLM, Id: 85
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg START_FOTP_TLM, Id: 86
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg FOTP_DATA_SEGMENT_TLM, Id: 87
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: FILE_XFER, Msg FINISH_FOTP_TLM, Id: 88
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg HK_TLM, Id: 89
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg DIAG_TLM, Id: 90
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_SCH, Msg TBL_ENTRY_TLM, Id: 91
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg HK_TLM, Id: 92
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg DATA_TYPES_TLM, Id: 93
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PKT_TBL_TLM, Id: 94
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PLBK_EVENT_TLM, Id: 95
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg SUB_WRAPPED_TLM, Id: 97
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: KIT_TO, Msg PUB_WRAPPED_TLM, Id: 98
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: APP_C_DEMO, Msg STATUS_TLM, Id: 99
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: APP_C_DEMO, Msg BIN_PLAYBK_TLM, Id: 100
+[2024-07-01 14:49:24,149] INFO [telemetry.py cfsinterface.telemetry __init__ (169)]: TelemetryServer constructor adding App: HI_WORLD, Msg STATUS_TLM, Id: 115
+[2024-07-01 14:49:24,149] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: HK_TLM
+[2024-07-01 14:49:24,149] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: APP_TLM
+[2024-07-01 14:49:24,149] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_ES: MEMSTATS_TLM
+[2024-07-01 14:49:24,149] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: HK_TLM
+[2024-07-01 14:49:24,149] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: SHORT_EVENT_MSG
+[2024-07-01 14:49:24,149] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_EVS: LONG_EVENT_MSG
+[2024-07-01 14:49:24,149] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: HK_TLM
+[2024-07-01 14:49:24,149] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: STATS_TLM
+[2024-07-01 14:49:24,149] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: ALLSUBS_TLM
+[2024-07-01 14:49:24,149] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_SB: ONESUB_TLM
+[2024-07-01 14:49:24,149] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TBL: HK_TLM
+[2024-07-01 14:49:24,149] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TBL: REG_TLM
+[2024-07-01 14:49:24,150] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TIME: HK_TLM
+[2024-07-01 14:49:24,150] INFO [basecamp.py __main__ __init__ (451)]: Basecamp telemetry adding observer for CFE_TIME: DIAG_TLM
+[2024-07-01 14:49:24,150] INFO [telemetry.py cfsinterface.telemetry _recv_tlm_handler (454)]: TelemetryQueueServer started receive telemetry handler thread
+[2024-07-01 14:49:24,150] INFO [basecamp.py __main__ execute (990)]: Successfully created application objects
+[2024-07-01 14:49:24,150] INFO [cmdtlmrouter.py router tlm_dest_connect_thread (274)]: Starting tlm_dest_connect_thread
+[2024-07-01 14:49:26,173] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-01 14:49:35,877] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-01 14:49:44,561] INFO [cmdtlmrouter.py router manage_routes (263)]: Router Control Command: ['ClosePort', '9003']
+[2024-07-01 14:49:44,562] INFO [cmdtlmrouter.py router remove_gnd_tlm_dest (179)]: Removed telemetry destination port 9003
+[2024-07-01 14:49:46,750] INFO [basecamp.py __main__ shutdown (685)]: Starting app shutdown sequence
+[2024-07-01 14:49:46,750] INFO [basecamp.py __main__ shutdown (687)]: Killing cFS Process
+[2024-07-01 14:49:46,750] INFO [cmdtlmrouter.py router shutdown (295)]: CmdTlm router shutdown started
+[2024-07-01 14:49:46,750] INFO [cmdtlmrouter.py router shutdown (303)]: CmdTlm router shutdown completed
+[2024-07-01 14:49:46,751] INFO [telemetry.py cfsinterface.telemetry shutdown (495)]: TelemetryQueueServer shutting down
+[2024-07-01 14:49:46,761] INFO [cmdtlmrouter.py router shutdown (295)]: CmdTlm router shutdown started
+[2024-07-01 14:49:46,761] INFO [cmdtlmrouter.py router shutdown (303)]: CmdTlm router shutdown completed
+[2024-07-01 14:49:47,008] INFO [basecamp.py __main__ shutdown (693)]: Completed app shutdown sequence
+[2024-07-01 14:49:47,008] INFO [basecamp.py __main__ run_app (1543)]: Exiting app
+[2024-07-01 14:49:47,185] INFO [telemetry.py cfsinterface.telemetry _recv_tlm_handler (484)]: TelemetryQueueServer terminating receive telemetry handler thread

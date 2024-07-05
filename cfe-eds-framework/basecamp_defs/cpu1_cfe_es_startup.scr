@@ -6,6 +6,8 @@ CFE_APP, kit_to,          KIT_TO_AppMain,      KIT_TO,       20,   32768, 0x0, 0
 CFE_APP, file_mgr,        FILE_MGR_AppMain,    FILE_MGR,     80,   16384, 0x0, 0;
 CFE_APP, file_xfer,       FILE_XFER_AppMain,   FILE_XFER,    80,   16384, 0x0, 0;
 CFE_APP, kit_sch,         KIT_SCH_AppMain,     KIT_SCH,      10,   32768, 0x0, 0;
+CFE_APP, hi_world, HI_WORLD_AppMain, HI_WORLD, 70, 32768, 0x0, 0;
+CFE_APP, hi_object, HI_OBJECT_AppMain, HI_OBJECT, 70, 32768, 0x0, 0;
 !BASECAMP-INSERT! - Don't remove this comment. It must be the first comment
 !
 ! The following entries are provided as a convenience for common libs/apps

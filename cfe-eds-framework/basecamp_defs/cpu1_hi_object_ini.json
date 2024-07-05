@@ -1,0 +1,21 @@
+{
+   "title": "Hi_object initialization file",
+   "description": ["Define runtime configurations"],
+   "config": {
+      
+      "APP_CFE_NAME": "HI_OBJECT",
+      "APP_PERF_ID":  127,
+          
+      "APP_CMD_PIPE_DEPTH": 5,
+      "APP_CMD_PIPE_NAME":  "HI_OBJECT_CMD",
+
+      "HI_OBJECT_CMD_TOPICID": 6248,
+      "BC_SCH_1_HZ_TOPICID": 6224,
+      "BC_SCH_4_SEC_TOPICID": 6228,
+      "HI_OBJECT_STATUS_TLM_TOPICID": 2164,
+
+      "EXOBJ_COUNTER_LO_LIM": 1,
+      "EXOBJ_COUNTER_HI_LIM": 60
+      
+   }
+}

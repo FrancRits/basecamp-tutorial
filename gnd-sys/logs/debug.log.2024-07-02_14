@@ -1,0 +1,28 @@
+[2024-07-02 14:49:14,350] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-02 14:53:42,529] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-02 14:55:08,456] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-02 14:55:23,633] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-02 14:55:47,989] INFO [cmdtlmrouter.py router manage_routes (263)]: Router Control Command: ['ClosePort', '9004']
+[2024-07-02 14:55:47,989] INFO [cmdtlmrouter.py router remove_gnd_tlm_dest (179)]: Removed telemetry destination port 9004
+[2024-07-02 14:56:45,988] INFO [cmdtlmrouter.py router manage_routes (263)]: Router Control Command: ['ClosePort', '9005']
+[2024-07-02 14:56:45,988] INFO [cmdtlmrouter.py router remove_gnd_tlm_dest (179)]: Removed telemetry destination port 9005
+[2024-07-02 14:56:59,802] INFO [cmdtlmrouter.py router manage_routes (263)]: Router Control Command: ['ClosePort', '9006']
+[2024-07-02 14:56:59,802] INFO [cmdtlmrouter.py router remove_gnd_tlm_dest (179)]: Removed telemetry destination port 9006
+[2024-07-02 14:57:25,480] INFO [basecamp.py __main__ execute (1257)]: Killing cFS Process
+[2024-07-02 14:57:29,302] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-02 14:57:41,426] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-02 15:00:15,354] INFO [cmdtlmrouter.py router manage_routes (263)]: Router Control Command: ['ClosePort', '9007']
+[2024-07-02 15:00:15,355] INFO [cmdtlmrouter.py router remove_gnd_tlm_dest (179)]: Removed telemetry destination port 9007
+[2024-07-02 15:00:30,347] INFO [basecamp.py __main__ execute (1257)]: Killing cFS Process
+[2024-07-02 15:00:37,910] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-02 15:00:39,303] INFO [basecamp.py __main__ execute (1257)]: Killing cFS Process
+[2024-07-02 15:00:43,467] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-02 15:00:55,076] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-02 15:03:40,772] INFO [basecamp.py __main__ execute (1257)]: Killing cFS Process
+[2024-07-02 15:03:42,572] INFO [cmdtlmrouter.py router manage_routes (263)]: Router Control Command: ['ClosePort', '9008']
+[2024-07-02 15:03:42,572] INFO [cmdtlmrouter.py router remove_gnd_tlm_dest (179)]: Removed telemetry destination port 9008
+[2024-07-02 15:03:57,693] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-02 15:04:12,875] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-02 15:07:32,190] INFO [cmdtlmrouter.py router manage_routes (263)]: Router Control Command: ['ClosePort', '9009']
+[2024-07-02 15:07:32,190] INFO [cmdtlmrouter.py router remove_gnd_tlm_dest (179)]: Removed telemetry destination port 9009
+[2024-07-02 15:07:43,572] INFO [basecamp.py __main__ execute (1257)]: Killing cFS Process

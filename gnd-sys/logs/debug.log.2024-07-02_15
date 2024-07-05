@@ -1,0 +1,4 @@
+[2024-07-02 15:51:40,529] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-02 15:51:52,680] INFO [cfstarget.py tools.cfstarget run (174)]: Starting cFS terminal window stdout display
+[2024-07-02 15:57:04,466] INFO [cmdtlmrouter.py router manage_routes (263)]: Router Control Command: ['ClosePort', '9010']
+[2024-07-02 15:57:04,467] INFO [cmdtlmrouter.py router remove_gnd_tlm_dest (179)]: Removed telemetry destination port 9010

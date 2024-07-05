@@ -64,8 +64,8 @@
       "MQTT_GW_HK_TLM_TOPICID"      : "topic-id-53",
       "MQTT_GW_DISCRETE_PLUGIN_TOPICID" : "topic-id-54",
       "MQTT_GW_RATE_PLUGIN_TOPICID" : "topic-id-55",
-      "MQTT_GW_TOPIC_SPARE_TOPICID" : "topic-id-56",
-      "MQTT_GW_TOPIC_SPARE_TOPICID" : "topic-id-57",
+      "HI_WORLD_STATUS_TLM_TOPICID":   "topic-id-56",
+      "HI_OBJECT_STATUS_TLM_TOPICID":  "topic-id-57",
       "MQTT_GW_TOPIC_SPARE_TOPICID" : "topic-id-58",
       "PL_MGR_STATUS_TLM_TOPICID"   : "topic-id-59",
       "PL_SIM_STATUS_TLM_TOPICID"   : "topic-id-60",
@@ -601,8 +601,8 @@
 
       {"packet": {
          "name": "MQTT_GW_TOPIC_SPARE_TOPICID",
-         "topic-id-56": 2156,
-         "topic-id": 2156,
+         "topic-id-56": 2163,
+         "topic-id": 2163,
          "forward": false,
          "priority": 0,
          "reliability": 0,
@@ -612,8 +612,8 @@
 
       {"packet": {
          "name": "MQTT_GW_TOPIC_SPARE_TOPICID",
-         "topic-id-57": 2157,
-         "topic-id": 2157,
+         "topic-id-57": 2164,
+         "topic-id": 2164,
          "forward": false,
          "priority": 0,
          "reliability": 0,

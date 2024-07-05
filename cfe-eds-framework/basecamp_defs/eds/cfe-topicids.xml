@@ -134,8 +134,8 @@
 		<!-- ##   TELECOMMAND_BASE_TOPICID offsets must be unique and incrementing        ## -->
 		<!-- ##   TELECOMMAND_NUM_TOPICIDS defines the maximum number of topic IDs        ## -->
 		<!-- ############################################################################### -->
-		<Define name="SPARE_CMD_TOPICID_1" value="${CFE_MISSION/TELECOMMAND_BASE_TOPICID} + 39" shortDescription="SPARE_CMD_TOPICID_1"/>
-		<Define name="SPARE_CMD_TOPICID_2" value="${CFE_MISSION/TELECOMMAND_BASE_TOPICID} + 40" shortDescription="SPARE_CMD_TOPICID_2"/>
+		<Define name="HI_WORLD_CMD_TOPICID" value="${CFE_MISSION/TELECOMMAND_BASE_TOPICID} + 39" shortDescription="SPARE_CMD_TOPICID_1"/>
+		<Define name="HI_OBJECT_CMD_TOPICID" value="${CFE_MISSION/TELECOMMAND_BASE_TOPICID} + 40" shortDescription="SPARE_CMD_TOPICID_2"/>
 		<Define name="SPARE_CMD_TOPICID_3" value="${CFE_MISSION/TELECOMMAND_BASE_TOPICID} + 41" shortDescription="SPARE_CMD_TOPICID_3"/>
 		<Define name="SPARE_CMD_TOPICID_4" value="${CFE_MISSION/TELECOMMAND_BASE_TOPICID} + 42" shortDescription="SPARE_CMD_TOPICID_4"/>
 		<Define name="SPARE_CMD_TOPICID_5" value="${CFE_MISSION/TELECOMMAND_BASE_TOPICID} + 43" shortDescription="SPARE_CMD_TOPICID_5"/>
@@ -233,8 +233,8 @@
 		<!-- ##   TELEMETRY_BASE_TOPICID offsets must be unique and incrementing          ## -->
 		<!-- ##   TELEMETRY_NUM_TOPICIDS defines the maximum number of topic IDs          ## -->
 		<!-- ############################################################################### -->
-		<Define name="SPARE_TLM_TOPICID_1" value="${CFE_MISSION/TELEMETRY_BASE_TOPICID} + 51" shortDescription="SPARE_TLM_TOPICID_1"/>
-		<Define name="SPARE_TLM_TOPICID_2" value="${CFE_MISSION/TELEMETRY_BASE_TOPICID} + 52" shortDescription="SPARE_TLM_TOPICID_2"/>
+		<Define name="HI_WORLD_STATUS_TLM_TOPICID" value="${CFE_MISSION/TELEMETRY_BASE_TOPICID} + 51" shortDescription="SPARE_TLM_TOPICID_1"/>
+		<Define name="HI_OBJECT_STATUS_TLM_TOPICID" value="${CFE_MISSION/TELEMETRY_BASE_TOPICID} + 52" shortDescription="SPARE_TLM_TOPICID_2"/>
 		<Define name="SPARE_TLM_TOPICID_3" value="${CFE_MISSION/TELEMETRY_BASE_TOPICID} + 53" shortDescription="SPARE_TLM_TOPICID_3"/>
 		<Define name="SPARE_TLM_TOPICID_4" value="${CFE_MISSION/TELEMETRY_BASE_TOPICID} + 54" shortDescription="SPARE_TLM_TOPICID_4"/>
 		<Define name="SPARE_TLM_TOPICID_5" value="${CFE_MISSION/TELEMETRY_BASE_TOPICID} + 55" shortDescription="SPARE_TLM_TOPICID_5"/>
